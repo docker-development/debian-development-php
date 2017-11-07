@@ -5,9 +5,6 @@ LABEL "de.andrelademann"="André Lademann" \
 	description="Docker debian image to use for php development, testing and deployment."
 
 # Configure locales
-RUN apt-get update \
- && apt-get install locales
-
 ENV LANG en_US.UTF-8 \
 		LANGUAGE en_US.UTF-8 \
 		LC_ALL C.UTF-8 \
@@ -25,8 +22,8 @@ ENV LANG en_US.UTF-8 \
 		LC_PAPER en_IE.UTF-8 \
 		LC_MEASUREMENT en_IE.UTF-8
 
-
-RUN apt-get install -y \
+RUN apt-get update &&\
+		apt-get install -y \
 		php \
 		php-cli \
 		php-curl \
@@ -39,4 +36,4 @@ RUN apt-get install -y \
 		php-intl \
 		php-soap
 
-RUN curl -sS https://getcomposer.org/installer | php
+RUN curl -sS https://getcomposer.org/installer | php --install-dir=/usr/local/bin --filename=composer
