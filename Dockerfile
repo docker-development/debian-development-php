@@ -26,31 +26,31 @@ ENV LANG en_US.UTF-8 \
 RUN apt-get update &&\
 		apt-get install -y \
 		php \
+		php-apcu \
 		php-cli \
 		php-curl \
 		php-dom \
-		php-simplexml \
-		php-zip \
-		php-mbstring \
-		php-apcu \
 		php-gd \
 		php-intl \
-		php-soap
+		php-mbstring \
+		php-pear \
+		php-simplexml \
+		php-soap \
+		php-xdebug \
+		php-zip
+
+# PECL packages
+RUN pecl install \
+		xdebug
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-#
 # VPN configurations, keys, certificates
-#
 COPY setup/ /
 
-#
 # SSH port
-#
 EXPOSE 22
 
-#
 # Keep up, when stared
-#
 CMD ["/usr/sbin/sshd", "-D"]

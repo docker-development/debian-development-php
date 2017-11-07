@@ -48,16 +48,17 @@
 | Package       | Description                                                                                                                             |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | php           | PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. |
+| php-apcu      | APCu is APC stripped of opcode caching. |
 | php-cli       | Command line tool for PHP |
 | php-curl      | PHP supports libcurl, a library created by Daniel Stenberg, that allows you to connect and communicate to many different types of servers with many different types of protocols.|
 | php-dom       | The DOM extension allows you to operate on XML documents through the DOM API with PHP. |
-| php-simplexml | The SimpleXML extension provides a very simple and easily usable toolset to convert XML to an object that can be processed with normal property selectors and array iterators. |
-| php-zip       | This extension enables you to transparently read or write ZIP compressed archives and the files inside them. |
-| php-mbstring  | While there are many languages in which every necessary character can be represented by a one-to-one mapping to an 8-bit value, there are also several languages which require so many characters for written communication that they cannot be contained within the range a mere byte can code- |
-| php-apcu      | APCu is APC stripped of opcode caching. |
 | php-gd        | PHP is not limited to creating just HTML output. It can also be used to create and manipulate image files in a variety of different image formats, including GIF, PNG, JPEG, WBMP, and XPM. Even more conveniently, PHP can output image streams directly to a browser. |
 | php-intl      | Internationalization extension (further is referred as Intl) is a wrapper for » ICU library, enabling PHP programmers to perform various locale-aware operations including but not limited to formatting, transliteration, encoding conversion, calendar operations, » UCA-conformant collation, locating text boundaries and working with locale identifiers, timezones and graphemes. |
+| php-mbstring  | While there are many languages in which every necessary character can be represented by a one-to-one mapping to an 8-bit value, there are also several languages which require so many characters for written communication that they cannot be contained within the range a mere byte can code- |
+| php-simplexml | The SimpleXML extension provides a very simple and easily usable toolset to convert XML to an object that can be processed with normal property selectors and array iterators. |
 | php-soap      | The SOAP extension can be used to write SOAP Servers and Clients. It supports subsets of » SOAP 1.1, » SOAP 1.2 and » WSDL 1.1 specifications. |
+| php-xdebug    | Xdebug is an extension for PHP to assist with debugging and development. It contains a single step debugger to use with IDEs; it upgrades PHP's var_dump() function; it adds stack traces for Notices, Warnings, Errors and Exceptions; it features functionality for recordig every function call and variable assignment to disk; it contains a profiler; and it provides code coverage functionality for use with PHPUnit. |
+| php-zip       | This extension enables you to transparently read or write ZIP compressed archives and the files inside them. |
 
 ## Usage
 
