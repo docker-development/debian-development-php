@@ -1,0 +1,7 @@
+./README.rst
+./Makefile
+./Make/*
+./VERSION
+./.editorconfig
+./.git
+./.gitignore

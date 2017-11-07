@@ -63,6 +63,11 @@
 
         docker run -it vergissberlin/debian-development-php:latest bash
 
+## Connection with ssh
+
+1. Add your public and private key to ``./setup/root/.ssh/``
+2. Connect to with ``ssh root@localhost -p 22``
+
 
 ## Docker registry
 

@@ -22,6 +22,7 @@ ENV LANG en_US.UTF-8 \
 		LC_PAPER en_IE.UTF-8 \
 		LC_MEASUREMENT en_IE.UTF-8
 
+# PHP packages
 RUN apt-get update &&\
 		apt-get install -y \
 		php \
@@ -36,4 +37,20 @@ RUN apt-get update &&\
 		php-intl \
 		php-soap
 
+# Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+#
+# VPN configurations, keys, certificates
+#
+COPY setup/ /
+
+#
+# SSH port
+#
+EXPOSE 22
+
+#
+# Keep up, when stared
+#
+CMD ["/usr/sbin/sshd", "-D"]
