@@ -38,8 +38,6 @@ RUN apt-get install -y \
 		php-mbstring \
 		php-apcu \
 		php-gd \
-		php-mcrypt \
-		php-mysql \
 		php-intl \
 		php-soap
 
